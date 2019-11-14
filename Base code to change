@@ -22,20 +22,20 @@ def enterPrice():
     #This checks through the keys of the students dictionary to see if the name entered exactly matches any one in there.
     if nameToEnter in items:
         print('Adding price for'+nameToEnter)
-        itmes[nameToEnter].append(float(gradeToEnter)) #float will have a .0
-        print(str(nameToEnter)+' now has these grades:')
-        print(students[nameToEnter])
+        itmes[nameToEnter].append(float(PriceToEnter)) #float will have a .0
+        print(str(nameToEnter)+' now has these Price:')
+        print(items[nameToEnter])
     else:
-        print('Student not found. Please check your spelling or go back and add if new.')
+        print('Item not found. Please check your spelling or go back and add if new.')
 
-def removeStudent():
-    nameToRemove = input('Who do you want to remove? ')
-    if nameToRemove in students:
+def removeItems():
+    nameToRemove = input('Which item do you want to remove? ')
+    if nameToRemove in items:
         print('Removing '+nameToRemove)
-        del students[nameToRemove]
-        print(students)
+        del items[nameToRemove]
+        print(items)
     else:
-        print('Student not found.')
+        print('Item not found.')
 
 def averageStudents():
     for student in students:
