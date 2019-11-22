@@ -37,34 +37,34 @@ def removeItems():
     else:
         print('Item not found.')
 
-def averageStudents():
-    for student in students:
-        grades = students[student]
-        average = s.mean(grades) #notice the s? we imported the statistuics module as s. Thus, we are using a fucntion called "mean()" from the statistics module.
-        print(student,' average ',average)
+def itemPrice():
+    for items in items:
+        Price = items[items]
+        items = (Price) 
+        print(items,' Price ',Price)
 
 def main():
     print("User: " + login)
     #Here we present our main menu options once a person logs in successfully.
     print("""
-    Welcome to the Grade Tracker
-    [1] - Enter Grades
-    [2] - Remove Student
-    [3] - Student Averages
+    Welcome to the For Sale Tracker
+    [1] - Enter Items
+    [2] - Remove Items
+    [3] - Item price
     [4] - Exit
     """)
 
-    action = input('What would you like to do? (Enter a number) ')
+    action = input('What would you like to do? (Enter an Item ) ')
     #Here we process their choice of what they want to do.
     if action == '1':
         #print('1 selected')
-        enterGrades()
+        enterPrice()
     elif action == '2':
         #print('2 selected')
-        removeStudent()
+        removeItems()
     elif action == '3':
         #print('3 selected')
-        averageStudents()
+        itemPrice()
     elif action == '4':
         #print('4 selected')
         exit()
