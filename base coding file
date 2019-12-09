@@ -54,7 +54,7 @@ def main():
     """)
 
     action = input('What would you like to do? (Enter an Item ) ')
-    #Here we process their choice of what they want to do.
+    
     if action == '1':
         #print('1 selected')
         enterPrice()
