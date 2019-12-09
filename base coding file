@@ -9,17 +9,16 @@ import statistics as s
 #add constants next
 admins = {'Owner1':'forsale','owner2':'forsale2'}
 
-#Like the admins above is a dictionary for items for sale. Dictionaries use curly brackets with colons to associate keys with values. In this case, each student's first name is a key. The values are lists of grades. 
-#Lists are denoted with square brackets. Values are indexed within starting with 0 for the first one. Each value is separated by commas.
+
 items = {'car':[4000,5000,6000],
             'new car':[15000,20000,25000],
             'old car':[1000,2000,3000]}
 
-#Now we define functions. Functions encapsulate logic into reusable recipes that can be executed whenever we need them by calling their name with parentheses.
+
 def enterPrice():
     nameToEnter = input('Type of car: ')
     PriceToEnter = input('Price: ')
-    #This checks through the keys of the students dictionary to see if the name entered exactly matches any one in there.
+    
     if nameToEnter in items:
         print('Adding price for'+nameToEnter)
         itmes[nameToEnter].append(float(PriceToEnter)) #float will have a .0
